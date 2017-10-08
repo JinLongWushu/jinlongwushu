@@ -1,0 +1,23 @@
+$yellow: #FFDA00;
+$black: #222222;
+
+
+@mixin transition ($defaultTransition: background-color 0.2s ease-in) {
+	-webkit-transition: $defaultTransition;
+	-moz-transition: $defaultTransition;
+	-ms-transition: $defaultTransition;
+	-o-transition: $defaultTransition;
+	transition: $defaultTransition;
+}
+@mixin borderRadius ($defaultBorderRadius: 0.3em) {
+	-webkit-border-radius: $defaultBorderRadius;
+	-moz-border-radius: $defaultBorderRadius; 
+	border-radius: $defaultBorderRadius; 
+}
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}

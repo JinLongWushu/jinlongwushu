@@ -1,0 +1,32 @@
+- title: "Home"
+  href: "/"
+
+- title: "About"
+  href: "/About/about.html"
+  subcategories:
+    - subtitle: "Jin Long"
+      subhref: "/About/about.html"
+    - subtitle: "Master Chen De Qing"
+      subhref: "/About/master-chen-de-qing.html"
+    - subtitle: "Faq"
+      subhref: "/About/faq.html"
+
+- title: "Wushu"
+  href: "/wushu.html"
+
+- title: "Tai Chi"
+  href: "/tai-chi.html"
+
+- title: "Classes"
+  href: "/classes.html"
+
+- title: "Shows"
+  href: "/Shows/events.html"
+  subcategories:
+    - subtitle: "Events"
+      subhref: "/Shows/events.html"
+    - subtitle: "Chinese New Year"
+      subhref: "/Shows/chinese-new-year-show.html"
+
+- title: "Contact"
+  href: "/contact.html"

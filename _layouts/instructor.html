@@ -1,0 +1,25 @@
+---
+layout: master
+---
+<div class="banner">
+	<img src="/images/{{ page.bannerImage }}" class="banner_image" />
+</div>
+<header class="header header-contentPage">
+	{% include header.html %}
+	<div class="curve">
+		<div class="curve_inner">
+			<p class="curve_strapline">Culture &amp; Performing Arts</p>
+		</div>
+	</div>
+</header>
+<main class="content">
+	<div class="content_header">
+		<h1 class="content_h1">{{ page.name }}</h1>
+		<div class="content_chinese">
+			武术
+		</div>
+	</div>
+	<div class="content_inner">
+		{{ content }}
+	</div>
+</main>

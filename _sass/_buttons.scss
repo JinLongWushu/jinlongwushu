@@ -1,0 +1,22 @@
+.btn {
+	display: inline-block;
+	background-color: $yellow;
+	color: $black;
+	padding: 0.5em 0.7em 0.5em 0.7em;
+	line-height: 1em;
+	text-decoration: none;
+	text-align: center;
+	border: 0;
+	border-bottom: 2px solid $yellow - 50;
+	font-family: 'dosislight', sans-serif;
+	font-size: 1em;
+	@include borderRadius(0.3em);
+	@include transition((background-color .3s ease, border-bottom .3s ease));
+
+	&:hover {
+		background-color: $yellow - 30;
+		color: $black;
+		text-decoration: none;
+		border-bottom: 2px solid $yellow - 80;
+	}
+}

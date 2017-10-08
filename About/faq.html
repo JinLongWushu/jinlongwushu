@@ -1,0 +1,27 @@
+---
+layout: content-layout
+title: FAQ - Jin Long
+bannerImage: banner-about.jpg
+---
+
+<main class="content">
+	<div class="content_header">
+		<h1 class="content_h1">Frequently Asked Questions</h1>
+		<div class="content_chinese">
+			问题
+		</div>
+	</div>
+	<div class="content_inner">
+		{% for faq in site.faq %}
+			<article class="faq">
+				<div class="faq_question">
+					<span class="faq_arrow"></span>
+					<h2>{{ faq.title }}</h2>
+				</div>
+				<div class="faq_answer">
+					{{ faq.content }}
+				</div>
+			</article>
+		{% endfor %}
+	</div>
+</main>

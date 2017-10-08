@@ -1,0 +1,108 @@
+@import "dev";
+
+/* FONTS */
+
+@font-face {
+    font-family: 'dosislight';
+    src: url('../fonts/dosis-light-webfont.eot');
+    src: url('../fonts/dosis-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis-light-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-light-webfont.woff') format('woff'),
+         url('../fonts/dosis-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dosismedium';
+    src: url('../fonts/dosis-medium-webfont.eot');
+    src: url('../fonts/dosis-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis-medium-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-medium-webfont.woff') format('woff'),
+         url('../fonts/dosis-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cinzel_decorativebold';
+    src: url('../fonts/cinzeldecorative-bold-webfont.eot');
+    src: url('../fonts/cinzeldecorative-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cinzeldecorative-bold-webfont.woff2') format('woff2'),
+         url('../fonts/cinzeldecorative-bold-webfont.woff') format('woff'),
+         url('../fonts/cinzeldecorative-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cinzel_decorativeregular';
+    src: url('../fonts/cinzeldecorative-regular-webfont.eot');
+    src: url('../fonts/cinzeldecorative-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cinzeldecorative-regular-webfont.woff2') format('woff2'),
+         url('../fonts/cinzeldecorative-regular-webfont.woff') format('woff'),
+         url('../fonts/cinzeldecorative-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+body {
+	font-family: 'dosislight', sans-serif;
+	color: #eee;
+	background-color: $black;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: 100%;
+}
+h1 {
+	font-family: 'cinzel_decorativeregular', georgia, sans-serif;
+	font-size: 2.5em;
+	line-height: 1.3em;
+	margin-bottom: 0.5em;
+	color: $yellow;
+}
+h2 {
+    font-family: 'cinzel_decorativeregular', georgia, sans-serif;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    margin: 2em 0 0.5em 0;
+    color: $yellow;
+}
+p {
+	line-height: 1.4em;
+	font-size: 1.2em;
+  margin-bottom: 1.5em;
+  -webkit-font-smoothing: antialiased;
+}
+.firstP:first-letter {
+    font-size: 3.2em;
+    float: left;
+    line-height: 0.75em;
+    font-family: 'cinzel_decorativeregular', georgia, sans-serif;
+    padding-top: 0.05em;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clear {
+    clear: both;
+}
+a {
+    color: $yellow;
+    text-decoration: none;
+    @include transition(color .3s ease);
+    &:hover {
+        color: $yellow - 20;
+        text-decoration: underline;
+    }
+}
