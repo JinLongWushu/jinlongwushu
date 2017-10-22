@@ -21,3 +21,136 @@ $black: #222222;
 	-webkit-transform: $transforms;
           transform: $transforms;
 }
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .aspectContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin banner($num, $holdSecs, $moveSecs, $transition) {
+	
+	$fullRotation: (($holdSecs + $moveSecs) * $num);
+	$singleRotationSeconds: $holdSecs + $moveSecs;
+	$singleRotationPercent: 100% / $num;
+	$holdPercent: ($holdSecs / $singleRotationSeconds) * $singleRotationPercent;
+	$movePercent: $singleRotationPercent - $holdPercent;
+	$firstMoveBackStart: $singleRotationPercent + $holdPercent;
+	$firstMoveBackEnd: $firstMoveBackStart + $movePercent;
+	$firstFinalMoveIn: 100% - $movePercent;
+	.banner-1 {
+		animation: move-1 $fullRotation+s infinite;
+	}
+	@if $transition == move {
+		@keyframes move-1 {
+			0% {
+				left: 0;
+			}
+			#{$holdPercent} {
+				left: 0;
+			}
+			#{$singleRotationPercent} {
+				left: -100%;
+			}
+			#{$firstMoveBackStart} {
+				left: -100%;
+			}
+			#{$firstMoveBackEnd} {
+				left: 100%;
+			}
+			#{$firstFinalMoveIn} {
+				left: 100%;
+			}
+			100% {
+				left: 0;
+			}
+		}
+		@for $i from 2 through $num {
+			.banner-#{$i} {
+				animation: move-#{$i} $fullRotation+s infinite;
+			}
+			$moveInStart: ($singleRotationPercent * ($i - 1)) - $movePercent;
+			$moveInEnd: $moveInStart + $movePercent;
+			$moveOutStart: $moveInEnd + $holdPercent;
+			$moveOutEnd: $moveOutStart + $movePercent;
+			@keyframes move-#{$i} {
+				0% {
+					left: 100%;
+				}
+				#{$moveInStart} {
+					left: 100%;
+				}
+				#{$moveInEnd} {
+					left: 0%;
+				}
+				#{$moveOutStart} {
+					left: 0%;
+				}
+				#{$moveOutEnd} {
+					left: -100%;
+				}
+				100% {
+					left: -100%;
+				}
+			}
+		}
+	} @else if $transition == fade {
+		@keyframes move-1 {
+			0% {
+				opacity: 1;
+			}
+			#{$holdPercent} {
+				opacity: 1;
+			}
+			#{$singleRotationPercent} {
+				opacity: 0;
+			}
+			#{$firstFinalMoveIn} {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+		@for $i from 2 through $num {
+			.banner-#{$i} {
+				animation: move-#{$i} $fullRotation+s infinite;
+			}
+			$moveInStart: ($singleRotationPercent * ($i - 1)) - $movePercent;
+			$moveInEnd: $moveInStart + $movePercent;
+			$moveOutStart: $moveInEnd + $holdPercent;
+			$moveOutEnd: $moveOutStart + $movePercent;
+			@keyframes move-#{$i} {
+				0% {
+					opacity: 0;
+				}
+				#{$moveInStart} {
+					opacity: 0;
+				}
+				#{$moveInEnd} {
+					opacity: 1;
+				}
+				#{$moveOutStart} {
+					opacity: 1;
+				}
+				#{$moveOutEnd} {
+					opacity: 0;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+		}
+	} 
+}
