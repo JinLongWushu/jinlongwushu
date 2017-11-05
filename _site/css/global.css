@@ -96,6 +96,19 @@ h2 {
   margin: 2em 0 0.5em 0;
   color: #FFDA00; }
 
+h3 {
+  font-family: 'dosismedium', sans-serif;
+  color: #eee;
+  font-size: 1.4em;
+  padding: 0 1rem;
+  margin-bottom: 0.4em; }
+
+h4 {
+  font-family: 'dosismedium', sans-serif;
+  font-size: 1.2em;
+  padding: 0 1rem;
+  margin-bottom: 0.2em; }
+
 p {
   line-height: 1.4em;
   font-size: 1.2em;
@@ -385,10 +398,12 @@ a {
     border-top-right-radius: 50%;
     background-color: #FFDA00;
     margin-left: -50%;
-    padding: 4em 55% 2em 55%; }
+    padding: 3.5em 55% 2em 55%; }
+    .header-contentPage .curve_inner {
+      padding-bottom: 1em; }
   .curve_strapline {
     color: #222222;
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin-bottom: 1.2em;
     font-family: 'cinzel_decorativeregular', georgia, sans-serif;
     line-height: 1.3em; }
@@ -641,6 +656,26 @@ a {
   .list-or li {
     list-style: decimal; }
 
+/* LOCATION LIST */
+.locationList_item {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #3b3b3b; }
+.locationList_title {
+  margin-bottom: 0.2em; }
+.locationList_address {
+  margin-bottom: 1em; }
+.locationList_icon {
+  display: inline-block;
+  float: left;
+  width: 1.4rem;
+  height: 1.4rem;
+  padding: 0.1em 0.2em 0.2em 0;
+  vertical-align: top;
+  margin-left: -0.2em; }
+  .locationList_icon svg {
+    width: 100%;
+    height: 100%; }
+
 /* CLASSES */
 .times {
   margin-bottom: 1em;
@@ -671,8 +706,9 @@ a {
   float: left;
   width: 1.4rem;
   height: 1.4rem;
-  padding: 0.2em 0.4em 0.2em 0;
-  vertical-align: top; }
+  padding: 0.1em 0.2em 0.2em 0;
+  vertical-align: top;
+  margin-left: -0.2em; }
   .class_icon svg {
     width: 100%;
     height: 100%; }
@@ -701,7 +737,8 @@ a {
   .fees h3 {
     font-family: 'cinzel_decorativeregular', georgia, sans-serif;
     font-size: 1.2em;
-    padding: 1em 0 0.5em 0; }
+    padding: 1em 0 0.5em 0;
+    color: #222222; }
   .fees_desc {
     border-bottom: 1px solid #e1bc00;
     display: block;
@@ -859,9 +896,9 @@ a {
   .curve {
     margin-top: -4.5em; }
     .curve_strapline {
-      font-size: 1.6em; }
+      font-size: 1.4em; }
     .curve_inner {
-      padding: 5em 55% 2em 55%; }
+      padding: 4em 55% 2em 55%; }
 
   .content_h1 {
     font-size: 1.8em; }
@@ -874,7 +911,7 @@ a {
     .curve_inner {
       width: 160%;
       margin-left: -30%;
-      padding: 6em 35% 3em 35%; }
+      padding: 4.5em 35% 3em 35%; }
 
   .infoPanel_inner {
     padding: 1.5em; }
@@ -907,7 +944,7 @@ a {
       padding: 0 1.5em 0 0.75em; } }
 @media screen and (min-width: 37.5em) {
   .curve_strapline {
-    font-size: 2em; }
+    font-size: 1.6em; }
 
   .infoPanel_title {
     font-size: 2em; }
@@ -1001,12 +1038,14 @@ a {
   .curve_inner {
     width: 140%;
     margin-left: -20%;
-    padding: 6em 25% 3em 25%; }
+    padding: 5em 25% 3em 25%; }
 
   .content_inner p {
     padding: 0 1.5rem; }
   .content_inner h2 {
     font-size: 1.8em;
+    padding: 0 1.5rem; }
+  .content_inner h3 {
     padding: 0 1.5rem; }
 
   .contentImg {
@@ -1039,7 +1078,12 @@ a {
   .form {
     padding: 0 1.5em; }
     .form_input {
-      font-size: 1.4em; } }
+      font-size: 1.4em; }
+
+  .locationList_title {
+    padding-left: 1.5rem; }
+  .locationList h4 {
+    padding-left: 1.5rem; } }
 @media screen and (min-width: 50em) {
   .fees_card {
     width: 32%; }
@@ -1056,6 +1100,9 @@ a {
     width: 50em; }
 
   .content_inner h2 {
+    width: 50rem;
+    margin: 0 auto 0.5em auto; }
+  .content_inner h3 {
     width: 50rem;
     margin: 0 auto 0.5em auto; }
   .content p {
@@ -1159,7 +1206,17 @@ a {
   .form {
     width: 50rem;
     margin: 0 auto 3em auto;
-    padding: 0; } }
+    padding: 0; }
+
+  .locationList_item {
+    width: 50rem;
+    margin: 0 auto 2em auto; }
+  .locationList_title {
+    padding: 0 1.5rem; }
+  .locationList_icon {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-top: -0.1rem; } }
 @media screen and (min-width: 64.375em) {
   /* HEADER */
   .header {
@@ -1176,7 +1233,8 @@ a {
       margin-left: -10%;
       padding: 7.5em 0 3em 0; }
     .curve_strapline {
-      font-size: 2.3em; }
+      font-size: 2em;
+      margin-bottom: 1em; }
 
   .intro {
     font-size: 1.6em;
@@ -1209,15 +1267,13 @@ a {
     position: relative;
     background-color: transparent;
     right: auto;
-    padding: 0;
+    padding: 0 0 0 5em;
     border-left: 0; }
     .nav_item {
       display: inline-block;
       width: auto;
       float: none;
       border-bottom: none; }
-      .nav_item:last-child {
-        margin-right: 3em; }
       .nav_item:nth-child(4) {
         margin-right: 10em; }
       .nav_item-sub {
@@ -1232,7 +1288,7 @@ a {
           max-height: 3rem; }
     .nav_link {
       display: block;
-      margin: 0 1em;
+      margin: 0 0.4em;
       padding: 0.5em 0.5em;
       line-height: 1em;
       color: #fff;
@@ -1418,113 +1474,120 @@ a {
     .times-noClass {
       display: block; }
 
+  /*
   .class {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #FFDA00;
-    top: 0;
-    left: 0;
-    padding: 0.5rem;
-    color: #222222;
-    z-index: 200;
-    overflow: hidden;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-    .class-plus15 {
-      top: 25%; }
-    .class-plus30 {
-      top: 50%; }
-    .class-250 {
-      height: 250%; }
-    .class-150 {
-      height: 150%; }
-    .class h3 {
-      font-size: 1rem;
-      margin-bottom: 0.4rem; }
-    .class strong {
-      font-family: dosismedium, arial, sans-serif; }
-    .class_location {
-      font-size: 0.9rem;
-      line-height: 1.2em;
-      margin-bottom: 1.5em; }
-      .content .class_location {
-        padding: 0;
-        width: auto; }
-    .class:hover {
-      background-color: #ffe40a; }
-    .class-expanded {
-      width: 200%;
-      height: 200%;
-      z-index: 220; }
-      .sunday .class-expanded {
-        left: -100%; }
-    .class_more {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      padding: 0.3em;
-      display: block;
-      color: #222222;
-      font-size: 0.9em;
-      text-decoration: none; }
-      .class_more:hover {
-        color: #222222;
-        text-decoration: none; }
-    .class_moreInfo {
-      opacity: 0;
-      font-size: 0.9rem;
-      -webkit-transition: opacity 0.3s 0 ease;
-      -moz-transition: opacity 0.3s 0 ease;
-      -ms-transition: opacity 0.3s 0 ease;
-      -o-transition: opacity 0.3s 0 ease;
-      transition: opacity 0.3s 0 ease; }
-      .class-expanded .class_moreInfo {
-        opacity: 1;
-        -webkit-transition: opacity 0.3s 0.3s ease;
-        -moz-transition: opacity 0.3s 0.3s ease;
-        -ms-transition: opacity 0.3s 0.3s ease;
-        -o-transition: opacity 0.3s 0.3s ease;
-        transition: opacity 0.3s 0.3s ease; }
-      .class_moreInfo li {
-        line-height: 1.5em;
-        margin-bottom: 0.4em; }
-    .class_icon {
-      display: inline-block;
-      float: left;
-      width: 1.4rem;
-      height: 1.4rem;
-      padding: 0.2em 0.4em 0.2em 0;
-      vertical-align: top; }
-      .class_icon svg {
-        width: 100%;
-        height: 100%; }
-    .class_path {
-      fill: #222222; }
-
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	background-color: $yellow;
+  	top: 0;
+  	left: 0;
+  	padding: 0.5rem;
+  	color: $black;
+  	z-index: 200;
+  	overflow: hidden;
+  	@include transition(all .3s ease);
+  	&-plus15 {
+  		top: 25%;
+  	}
+  	&-plus30 {
+  		top: 50%;
+  	}
+  	&-250 {
+  		height: 250%;
+  	}
+  	&-150 {
+  		height: 150%;
+  	}
+  	h3 {
+  		font-size: 1rem;
+  		margin-bottom: 0.4rem;
+  	}
+  	strong {
+  		font-family: dosismedium, arial, sans-serif;
+  	}
+  	&_location {
+  		font-size: 0.9rem;
+  		line-height: 1.2em;
+  		margin-bottom: 1.5em;
+  		.content & {
+  			padding: 0;
+  			width: auto;
+  		}
+  	}
+  	&:hover {
+  		background-color: $yellow + 10;
+  	}
+  	&-expanded {
+  		width: 200%;
+  		height: 200%;
+  		z-index: 220;
+  		.sunday & {
+  			left: -100%;
+  		}
+  	}
+  	&_more {
+  		position: absolute;
+  		right: 0;
+  		bottom: 0;
+  		padding: 0.3em;
+  		display: block;
+  		color: $black;
+  		font-size: 0.9em;
+  		text-decoration: none;
+  		&:hover {
+  			color: $black;
+  			text-decoration: none;
+  		}
+  	}
+  	&_moreInfo {
+  		opacity: 0;
+  		font-size: 0.9rem;
+  		@include transition(opacity .3s 0 ease);
+  		.class-expanded & {
+  			opacity: 1;
+  			@include transition(opacity .3s .3s ease);
+  		}
+  		li {
+  			line-height: 1.5em;
+  			margin-bottom: 0.4em;
+  		}
+  	}
+  	&_icon {
+  		display: inline-block;
+  		float: left;
+  		width: 1.4rem;
+  		height: 1.4rem;
+  		padding: 0.2em 0.4em 0.2em 0;
+  		vertical-align: top;
+  		svg {
+  			width: 100%;
+  			height: 100%;
+  		}
+  	}
+  	&_path {
+  		fill: $black;
+  	}
+  }
   .testfill {
-    fill: #fff; }
-
+  	fill: #fff;
+  }
   .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0;
-    z-index: -1;
-    -webkit-transition: opacity 0.3s ease;
-    -moz-transition: opacity 0.3s ease;
-    -ms-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease; }
-    .overlay-on {
-      z-index: 210;
-      opacity: 0.6; } }
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	background-color: #000;
+  	opacity: 0;
+  	z-index: -1;
+  	@include transition(opacity .3s ease);
+  	&-on {
+  		z-index: 210;
+  		opacity: 0.6;
+  	}
+  }
+  */ }
 @media screen and (min-width: 68.75em) {
   .instructors {
     width: 80%;
@@ -1685,7 +1748,10 @@ a {
     margin-top: -15em; }
 
   .faq {
-    margin-bottom: 3em; } }
+    margin-bottom: 3em; }
+
+  .heroBanner {
+    margin-top: -3rem; } }
 @media screen and (min-width: 84.375em) {
   .infoPanel_title {
     font-size: 2.6em; }
