@@ -14,10 +14,10 @@
 	.curve {
 		margin-top: -4.5em;
 		&_strapline {
-			font-size: 1.6em;
+			font-size: 1.4em;
 		}
 		&_inner {
-		    padding: 5em 55% 2em 55%;
+		    padding: 4em 55% 2em 55%;
 		}
 	}
 	.content {
@@ -37,7 +37,7 @@
 		&_inner {
 			width: 160%;
 		    margin-left: -30%;
-		    padding: 6em 35% 3em 35%;
+		    padding: 4.5em 35% 3em 35%;
 		}
 	}
 	.infoPanel {
@@ -91,7 +91,7 @@
 @media screen and (min-width: 37.5em) /* 600px */ { 
 	.curve {
 		&_strapline {
-			font-size: 2em;
+			font-size: 1.6em;
 		}
 	}
 	.infoPanel {
@@ -204,7 +204,7 @@
 		&_inner {
 			width: 140%;
 		    margin-left: -20%;
-		    padding: 6em 25% 3em 25%;
+		    padding: 5em 25% 3em 25%;
 		}
 	}
 	.content {
@@ -214,6 +214,9 @@
 			}
 			h2 {
 				font-size: 1.8em;
+				padding: 0 1.5rem;
+			}
+			h3 {
 				padding: 0 1.5rem;
 			}
 		}
@@ -259,6 +262,14 @@
 			font-size: 1.4em;
 		}
 	}
+	.locationList {
+		&_title {
+			padding-left: 1.5rem;
+		}
+		h4 {
+			padding-left: 1.5rem;
+		}
+	}
 }
 
 @media screen and (min-width: 50em) /* 800px */ {
@@ -291,6 +302,10 @@
 		&_inner {
 			
 			h2 {
+				width: 50rem;
+				margin: 0 auto 0.5em auto;
+			}
+			h3 {
 				width: 50rem;
 				margin: 0 auto 0.5em auto;
 			}
@@ -420,6 +435,20 @@
 		margin: 0 auto 3em auto;
 		padding: 0;
 	}
+	.locationList {
+		&_item {
+			width: 50rem;
+    		margin: 0 auto 2em auto;
+		}
+		&_title {
+			padding: 0 1.5rem;
+		}
+		&_icon {
+			width: 1.7rem;
+			height: 1.7rem;
+			margin-top: -0.1rem;
+		}
+	}
 }
 @media screen and (min-width: 64.375em) /* 1030px */ {
 	/* HEADER */
@@ -442,7 +471,8 @@
 		    padding: 7.5em 0 3em 0;
 		}
 		&_strapline {
-			font-size: 2.3em;
+			font-size: 2em;
+			margin-bottom: 1em;
 		}
 	}
 	.intro {
@@ -481,16 +511,13 @@
 		position: relative;
 		background-color: transparent;
 		right: auto;
-		padding: 0;
+		padding: 0 0 0 5em;
 		border-left: 0;
 		&_item {
 			display: inline-block;
 			width: auto;
 			float: none;
 			border-bottom: none;
-			&:last-child {
-				margin-right: 3em;
-			}
 			&:nth-child(4) {
 				margin-right: 10em;
 			}
@@ -505,7 +532,7 @@
 		}
 		&_link {
 			display: block;
-			margin: 0 1em;
+			margin: 0 0.4em;
 			padding: 0.5em 0.5em;
 			line-height: 1em;
 			color: #fff;
@@ -709,6 +736,7 @@
 			display: block;
 		}
 	}
+	/*
 	.class {
 		position: absolute;
 		width: 100%;
@@ -821,7 +849,7 @@
 			opacity: 0.6;
 		}
 	}
-	
+	*/
 }
 @media screen and (min-width: 68.75em) /* 1100px */ {
 	.instructors {
@@ -1010,6 +1038,9 @@
 	}
 	.faq {
 		margin-bottom: 3em;
+	}
+	.heroBanner {
+		margin-top: -3rem;
 	}
 }
 @media screen and (min-width: 84.375em) /* 1350px */ {

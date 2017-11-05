@@ -13,14 +13,24 @@
 
 - title: "Wushu"
   href: "/wushu.html"
+  subcategories:
+    - subtitle: "About Wushu"
+      subhref: "/wushu.html"
+    - subtitle: "Wushu Classes"
+      subhref: "/classes.html"
 
 - title: "Tai Chi"
   href: "/tai-chi.html"
+  subcategories:
+    - subtitle: "About Tai Chi"
+      subhref: "/tai-chi.html"
+    - subtitle: "Tai Chi Classes"
+      subhref: "/classes.html"
 
-- title: "Classes"
-  href: "/classes.html"
+- title: "Arts & Crafts"
+  href: "/arts-and-crafts.html"
 
-- title: "Shows"
+- title: "Performance"
   href: "/Shows/events.html"
   subcategories:
     - subtitle: "Events"
