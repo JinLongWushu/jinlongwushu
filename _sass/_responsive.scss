@@ -9,6 +9,7 @@
 @media screen and (min-width: 21.875em) /* 350px */ {
 	.logo {
 		width: 8em;
+		height: 10.5em;
 		margin: -7.5em auto 1em auto;
 	}
 	.curve {
@@ -47,6 +48,7 @@
 	}
 	.logo {
 		width: 9em;
+		height: 11.6em;
 		margin: -9.5em auto 1em auto;
 	}
 	.fees {
@@ -135,6 +137,9 @@
 	}
 	.btn {
 		font-size: 1.2em;
+		&-small {
+			font-size: 1em;
+		}
 	}
 	.list {
 		font-size: 1.4em;
@@ -484,6 +489,7 @@
 	}
 	.logo {
 		width: 15em;
+		height: 18.5em;
 		position: absolute;
 		left: 50%;
 		margin-left: -7.5em;

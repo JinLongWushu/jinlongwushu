@@ -19,4 +19,12 @@
 		text-decoration: none;
 		border-bottom: 2px solid $yellow - 80;
 	}
+	&-black {
+		background-color: $black - 10;
+		border-bottom: 2px solid $black - 30;
+		color: $yellow;
+	}
+	&-small {
+		font-size: 0.9em;
+	}
 }
