@@ -4,6 +4,7 @@
 	.mob-full {
 	  width: 100%;
 	  margin-bottom: 2em;
+	  padding-right: 0;
 	}
 }
 @media screen and (min-width: 21.875em) /* 350px */ {
@@ -275,6 +276,20 @@
 			padding-left: 1.5rem;
 		}
 	}
+	.locationItem {
+		&_address {
+			padding: 0 1.5rem 0 1.5rem;
+			li {
+				font-size: 1.4em;
+			}
+		}
+		&_icon {
+			margin: 0.2rem 0 0 1.4rem;
+		}
+		&_map {
+			height: 15em;
+		}
+	}
 }
 
 @media screen and (min-width: 50em) /* 800px */ {
@@ -325,6 +340,10 @@
 			}
 		}
 
+	}
+	.innerSection {
+		width: 50rem;
+		margin: 0 auto 0.5em auto;
 	}
 	.contentImg {
 		width: 50rem;
@@ -452,6 +471,32 @@
 			width: 1.7rem;
 			height: 1.7rem;
 			margin-top: -0.1rem;
+		}
+	}
+	.locationItem {
+		padding-right: 1.5rem;
+		max-width: 65rem;
+		margin: 0 auto 3em auto;
+		&_address {
+			padding: 0 0 0 2.8em;
+			li {
+				display: block;
+			}
+		}
+		h2 {
+			width: auto;
+		}
+	}
+	.feesWrap {
+		max-width: 65rem;
+		margin: 0 auto 3em auto;
+		h2 {
+			width: 100%;
+		}
+	}
+	.fees {
+		h3 {
+			width: 100%;
 		}
 	}
 }
@@ -742,120 +787,6 @@
 			display: block;
 		}
 	}
-	/*
-	.class {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-color: $yellow;
-		top: 0;
-		left: 0;
-		padding: 0.5rem;
-		color: $black;
-		z-index: 200;
-		overflow: hidden;
-		@include transition(all .3s ease);
-		&-plus15 {
-			top: 25%;
-		}
-		&-plus30 {
-			top: 50%;
-		}
-		&-250 {
-			height: 250%;
-		}
-		&-150 {
-			height: 150%;
-		}
-		h3 {
-			font-size: 1rem;
-			margin-bottom: 0.4rem;
-		}
-		strong {
-			font-family: dosismedium, arial, sans-serif;
-		}
-		&_location {
-			font-size: 0.9rem;
-			line-height: 1.2em;
-			margin-bottom: 1.5em;
-			.content & {
-				padding: 0;
-				width: auto;
-			}
-		}
-		&:hover {
-			background-color: $yellow + 10;
-		}
-		&-expanded {
-			width: 200%;
-			height: 200%;
-			z-index: 220;
-			.sunday & {
-				left: -100%;
-			}
-		}
-		&_more {
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			padding: 0.3em;
-			display: block;
-			color: $black;
-			font-size: 0.9em;
-			text-decoration: none;
-			&:hover {
-				color: $black;
-				text-decoration: none;
-			}
-		}
-		&_moreInfo {
-			opacity: 0;
-			font-size: 0.9rem;
-			@include transition(opacity .3s 0 ease);
-			.class-expanded & {
-				opacity: 1;
-				@include transition(opacity .3s .3s ease);
-			}
-			li {
-				line-height: 1.5em;
-				margin-bottom: 0.4em;
-			}
-		}
-		&_icon {
-			display: inline-block;
-			float: left;
-			width: 1.4rem;
-			height: 1.4rem;
-			padding: 0.2em 0.4em 0.2em 0;
-			vertical-align: top;
-			svg {
-				width: 100%;
-				height: 100%;
-			}
-		}
-		&_path {
-			fill: $black;
-		}
-	}
-	.testfill {
-		fill: #fff;
-	}
-	.overlay {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: #000;
-		opacity: 0;
-		z-index: -1;
-		@include transition(opacity .3s ease);
-		&-on {
-			z-index: 210;
-			opacity: 0.6;
-		}
-	}
-	*/
 }
 @media screen and (min-width: 68.75em) /* 1100px */ {
 	.instructors {
@@ -863,6 +794,7 @@
 		margin: 2em auto;
 		max-width: 60rem;
 	}
+
 }
 @media screen and (min-width: 75em) /* 1200px */ {
 	.nav {
@@ -986,24 +918,6 @@
 				font-size: 2.2em;
 				width: 80%;
 			}
-		}
-	}
-	.fees {
-		padding: 2em;
-		&_card {
-			width: 18.4%;
-			margin-right: 2%;
-			&:last-child {
-				margin-right: 0;
-			}
-			&:nth-child(3n+3) {
-				margin-right: 2%;
-			}
-		}
-		&_desc {
-			margin-bottom: 2.5em;
-			padding-bottom: 2em;
-			min-height: 4.5em;
 		}
 	}
 	.quote {
