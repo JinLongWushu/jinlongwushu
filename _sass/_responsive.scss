@@ -32,6 +32,9 @@
 			margin-top: 10em;
 		}
 	}
+	.footerLogo {
+		max-width: 70%;
+	}
 }
 @media screen and (min-width: 31.25em) /* 500px */ {
 	.curve {
@@ -69,6 +72,9 @@
 		&-heroBanner {
 			margin-top: 13em;
 		}
+	}
+	.footerLogo {
+		max-width: 50%;
 	}
 }
 @media screen and (min-width: 34.375em) /* 550px */ { 
@@ -290,6 +296,22 @@
 			height: 15em;
 		}
 	}
+	.imageList {
+		margin: 0 1.5rem;
+		&_item {
+			width: 50%;
+			float: left;
+			&:nth-child(odd) {
+				padding-right: 0.5rem;
+			}
+			&:nth-child(even) {
+				padding-left: 0.5rem;
+			}
+		}
+		&_img {
+			max-width: 100%;
+		}
+	}
 }
 
 @media screen and (min-width: 50em) /* 800px */ {
@@ -483,6 +505,11 @@
 				display: block;
 			}
 		}
+		&_times {
+			.content & {
+				width: 100%;
+			}
+		}
 		h2 {
 			width: auto;
 		}
@@ -498,6 +525,14 @@
 		h3 {
 			width: 100%;
 		}
+	}
+	.contentImgFullWidth {
+		img {
+			margin-bottom: 2em;
+		}
+	}
+	.footerLogo {
+		max-width: 100%;
 	}
 }
 @media screen and (min-width: 64.375em) /* 1030px */ {
@@ -799,7 +834,7 @@
 @media screen and (min-width: 75em) /* 1200px */ {
 	.nav {
 		&_link {
-			margin: 0 1.3em;
+			margin: 0 1.1em;
 		}
 	}
 	.nextClass {
@@ -961,6 +996,24 @@
 	}
 	.heroBanner {
 		margin-top: -3rem;
+	}
+	.imageList {
+		width: 65rem;
+		margin: 0 auto;
+		&_item {
+			width: 50%;
+			float: left;
+			&:nth-child(odd) {
+				padding-right: 0.8rem;
+			}
+			&:nth-child(even) {
+				padding-left: 0.8rem;
+			}
+		}
+		&_img {
+			max-width: 100%;
+			@include borderRadius(1em);
+		}
 	}
 }
 @media screen and (min-width: 84.375em) /* 1350px */ {

@@ -46,7 +46,7 @@
 		margin-top: 8em;
 	}
 } 
-@include banner(3, 5, 2, fade);
+@include banner(4, 4, 2, fade);
 .nav {
 	position: fixed;
 	top: 0;
@@ -199,6 +199,10 @@
 		margin-right: 0.4em;
 		padding: 0.8em 1em 0.8em 0;
 	}
+}
+.footerLogo {
+	max-width: 100%;
+	margin: 0.5em 0 1em 0;
 }
 .nextClass {
 	width: 100%;
@@ -396,6 +400,12 @@
 	margin-bottom: 1.5em;
 	img {
 		max-width: 100%;
+	}
+}
+.contentImgFullWidth {
+	img {
+		max-width: 100%;
+		margin-top: 2em;
 	}
 }
 .smallPrint {
@@ -748,5 +758,13 @@
 		}
 	}
 }
-
+.imageList {
+	&_item {
+		margin-bottom: 1em;
+		text-align: center;
+	}
+	&_img {
+		max-width: 100%;
+	}
+}
 
