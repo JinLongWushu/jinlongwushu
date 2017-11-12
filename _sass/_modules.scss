@@ -31,6 +31,7 @@
 }
 .logo {
 	width: 6em;
+	height: 8em;
 	position: relative;
 	margin: -6.1em auto 1em auto;
 	.header-video & {
@@ -45,7 +46,7 @@
 		margin-top: 8em;
 	}
 } 
-@include banner(3, 5, 2, fade);
+@include banner(4, 4, 2, fade);
 .nav {
 	position: fixed;
 	top: 0;
@@ -198,6 +199,10 @@
 		margin-right: 0.4em;
 		padding: 0.8em 1em 0.8em 0;
 	}
+}
+.footerLogo {
+	max-width: 100%;
+	margin: 0.5em 0 1em 0;
 }
 .nextClass {
 	width: 100%;
@@ -397,6 +402,12 @@
 		max-width: 100%;
 	}
 }
+.contentImgFullWidth {
+	img {
+		max-width: 100%;
+		margin-top: 2em;
+	}
+}
 .smallPrint {
 	font-size: 0.8em;
 }
@@ -429,6 +440,45 @@
 	}
 }
 /* LOCATION LIST */
+
+.locationItem {
+	&_address {
+		padding: 0 1rem 0 1rem;
+		li {
+			display: inline;
+			margin-right: 0.3em;
+			font-size: 1.2em;
+			line-height: 1.4em;
+			-webkit-font-smoothing: antialiased;
+			&:first-child {
+				display: block;
+			}
+		}
+	}
+	&_times {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&_icon {
+		display: inline-block;
+		float: left;
+		width: 1.4rem;
+		height: 1.6rem;
+		padding: 0.2em 0.2em 0.2em 0;
+		vertical-align: top;
+		margin: 0 0 0 0.9rem;
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&_map {
+		width: 100%;
+		height: 10em;
+	}
+}
+
 
 .locationList {
 	&_item {
@@ -566,6 +616,9 @@
 	&_price {
 		font-size: 2em;
 		font-family: 'cinzel_decorativeregular', georgia, sans-serif;
+	}
+	&_unit {
+		font-size: 0.6em;
 	}
 }
 
@@ -705,5 +758,13 @@
 		}
 	}
 }
-
+.imageList {
+	&_item {
+		margin-bottom: 1em;
+		text-align: center;
+	}
+	&_img {
+		max-width: 100%;
+	}
+}
 

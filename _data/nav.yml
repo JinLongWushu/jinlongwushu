@@ -12,20 +12,20 @@
       subhref: "/About/faq.html"
 
 - title: "Wushu"
-  href: "/wushu.html"
+  href: "/Wushu/wushu.html"
   subcategories:
     - subtitle: "About Wushu"
-      subhref: "/wushu.html"
+      subhref: "/Wushu/wushu.html"
     - subtitle: "Wushu Classes"
-      subhref: "/classes.html"
+      subhref: "/Wushu/wushu-classes.html"
 
 - title: "Tai Chi"
-  href: "/tai-chi.html"
+  href: "/Tai-chi/tai-chi.html"
   subcategories:
     - subtitle: "About Tai Chi"
-      subhref: "/tai-chi.html"
+      subhref: "/Tai-chi/tai-chi.html"
     - subtitle: "Tai Chi Classes"
-      subhref: "/classes.html"
+      subhref: "/Tai-chi/tai-chi-classes.html"
 
 - title: "Arts & Crafts"
   href: "/arts-and-crafts.html"
