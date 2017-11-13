@@ -194,6 +194,10 @@
 	}
 	.infoPanel {
 		margin-bottom: 3em;
+		&:last-child {
+			padding-bottom: 3em;
+			margin-bottom: 0;
+		}
 		&_title {
 			font-size: 2.4em;
 		}
@@ -599,6 +603,7 @@
 		right: auto;
 		padding: 0 0 0 5em;
 		border-left: 0;
+		overflow-y: visible;
 		&_item {
 			display: inline-block;
 			width: auto;
@@ -845,6 +850,10 @@
 		width: 100%;
 		padding: 0;
 		margin-bottom: 0;
+		&:last-child {
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
 		&_title {
 			width: 100%;
 			position: absolute;
