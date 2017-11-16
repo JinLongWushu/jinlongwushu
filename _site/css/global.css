@@ -231,7 +231,7 @@ a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 50.05208%; }
+    padding-top: 50.0520833333%; }
   .heroBanner > .aspectContent {
     position: absolute;
     top: 0;
@@ -270,11 +270,11 @@ a {
 @keyframes move-1 {
   0% {
     opacity: 1; }
-  16.66667% {
+  16.6666666667% {
     opacity: 1; }
   25% {
     opacity: 0; }
-  91.66667% {
+  91.6666666667% {
     opacity: 0; }
   100% {
     opacity: 1; } }
@@ -284,11 +284,11 @@ a {
 @keyframes move-2 {
   0% {
     opacity: 0; }
-  16.66667% {
+  16.6666666667% {
     opacity: 0; }
   25% {
     opacity: 1; }
-  41.66667% {
+  41.6666666667% {
     opacity: 1; }
   50% {
     opacity: 0; }
@@ -300,11 +300,11 @@ a {
 @keyframes move-3 {
   0% {
     opacity: 0; }
-  41.66667% {
+  41.6666666667% {
     opacity: 0; }
   50% {
     opacity: 1; }
-  66.66667% {
+  66.6666666667% {
     opacity: 1; }
   75% {
     opacity: 0; }
@@ -316,11 +316,11 @@ a {
 @keyframes move-4 {
   0% {
     opacity: 0; }
-  66.66667% {
+  66.6666666667% {
     opacity: 0; }
   75% {
     opacity: 1; }
-  91.66667% {
+  91.6666666667% {
     opacity: 1; }
   100% {
     opacity: 0; }
@@ -395,7 +395,7 @@ a {
     .navIcon span:last-child {
       margin-bottom: 0; }
   .navIcon-open {
-    background-color: transparent; }
+    background-color: rgba(0, 0, 0, 0); }
     .navIcon-open span {
       background-color: #9b7600; }
     .navIcon-open .first {
