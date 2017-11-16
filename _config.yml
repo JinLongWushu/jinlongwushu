@@ -22,7 +22,6 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-baseurl: /jinlongwushu
 collections:
   faq:
     output: false
