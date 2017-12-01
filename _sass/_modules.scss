@@ -187,6 +187,10 @@
 .socialMedia {
 	width: 100%;
 	text-align: center;
+	&_text {
+		position: absolute;
+		left: -999em;
+	}
 	&_icon {
 		fill: $black;
 	}
@@ -287,8 +291,8 @@
 		text-transform: uppercase;
 		margin-bottom: 0.1em;
 		font-family: 'dosismedium';
-		font-size: 0.9em;
-		color: $yellow - 50;
+		font-size: 0.8em;
+		color: $black;
 	}
 	&_info {
 		font-size: 1em;

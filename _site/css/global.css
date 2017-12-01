@@ -469,6 +469,9 @@ a {
 .socialMedia {
   width: 100%;
   text-align: center; }
+  .socialMedia_text {
+    position: absolute;
+    left: -999em; }
   .socialMedia_icon {
     fill: #222222; }
   .socialMedia li {
@@ -569,8 +572,8 @@ a {
     text-transform: uppercase;
     margin-bottom: 0.1em;
     font-family: 'dosismedium';
-    font-size: 0.9em;
-    color: #cda800; }
+    font-size: 0.8em;
+    color: #222222; }
   .nextClass_info {
     font-size: 1em; }
     .nextClass_info-large {
