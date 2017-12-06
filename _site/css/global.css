@@ -252,9 +252,6 @@ a {
     position: fixed;
     left: 0; }
 
-@-moz-document url-prefix() {
-  .heroBanner_img {
-    position: relative; } }
 .logo {
   width: 6em;
   height: 8em;
@@ -1403,6 +1400,27 @@ a {
 
   .heroBanner {
     display: block; }
+
+  .bannerImg {
+    width: 100%;
+    height: 100%;
+    position: fixed; }
+
+  .bannerImg1 {
+    background: url("../images/hero-city-centre.jpg") left top no-repeat;
+    background-size: 100%; }
+
+  .bannerImg2 {
+    background: url("../images/hero-class.jpg") left top no-repeat;
+    background-size: 100%; }
+
+  .bannerImg3 {
+    background: url("../images/hero-contortion-2.jpg") left top no-repeat;
+    background-size: 100%; }
+
+  .bannerImg4 {
+    background: url("../images/hero-show.jpg") left top no-repeat;
+    background-size: 100%; }
 
   /* NAV */
   .nav {
