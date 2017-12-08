@@ -1738,6 +1738,7 @@ a {
       left: 50%;
       margin-left: -3.5em;
       opacity: 0;
+      z-index: 110;
       -webkit-transition: opacity 0.3s 1.4s ease;
       -moz-transition: opacity 0.3s 1.4s ease;
       -ms-transition: opacity 0.3s 1.4s ease;
@@ -1775,7 +1776,7 @@ a {
       -o-transition: height 0.5s 0.9s ease;
       transition: height 0.5s 0.9s ease; }
       .infoPanel-animate .infoPanel_line {
-        height: calc(100% - 14.5em); }
+        height: calc(100% - 13.3em); }
 
   .footer {
     padding: 4em; }
