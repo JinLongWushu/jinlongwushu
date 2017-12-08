@@ -951,6 +951,7 @@
 			left: 50%;
 			margin-left: -3.5em;
 			opacity: 0;
+			z-index: 110;
 			@include transition(opacity 0.3s 1.4s ease);
 			.infoPanel-animate & {
 				opacity: 1;
@@ -982,7 +983,7 @@
 			background-color: $yellow;
 			@include transition(height 0.5s 0.9s ease);
 			.infoPanel-animate & {
-				height: calc(100% - 14.5em);
+				height: calc(100% - 13.3em);
 			}
 
 		}
