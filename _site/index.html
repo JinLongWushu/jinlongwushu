@@ -162,7 +162,85 @@
   </li>
 </ul>
 
-<script type="text/javascript">
+<section>
+  <article id="article1" class="infoPanel group">
+    <h1 class="infoPanel_title">
+      <span class="infoPanel_titleInner">
+        Chinese New Year Show 
+        <span class="infoPanel_dot"></span>
+      </span>
+    </h1>
+    <div class="infoPanel_chinese">
+      中国春节
+    </div>
+    <span class="infoPanel_line"></span>
+    <div class="infoPanel_col1">
+      <img class="infoPanel_image infoPanel_image-left" src="images/home-cny.jpg" alt="Chinese New Year Show"
+            sizes="100vw, (min-width: 43.75em) calc(100vw - 3em), (min-width: 75em) 50vw"
+            srcset="images/home-cny-1000.jpg 1000w, 
+                    images/home-cny-600.jpg 600w,
+                    images/home-cny-400.jpg 400w" />
+    </div>
+    <div class="infoPanel_col2">
+      <div class="infoPanel_inner">
+        <p class="firstP">Touring across the country to celebrate the biggest festive event on the Chinese calendar, Jinlong’s ‘Chinese New Year Extravaganza’ is a unique and exciting show of cultural spectacle featuring a team of performers showcasing amazing Chinese performing arts.</p>
+      </div>
+    </div>
+    <a href="/Shows/chinese-new-year-show.html" class="btn infoPanel_btn">Find out more</a>
+  </article>
+  <article id="article2" class="infoPanel group">
+    <h1 class="infoPanel_title">
+      <span class="infoPanel_titleInner">
+        Wushu 
+        <span class="infoPanel_dot"></span>
+      </span>
+    </h1>
+    <div class="infoPanel_chinese">
+      武术
+    </div>
+    <span class="infoPanel_line"></span>
+    <div class="infoPanel_col1 infoPanel_col1-right">      
+      <img class="infoPanel_image" src="images/fanzi.jpg" alt="Fanzi"
+            sizes="100vw, (min-width: 43.75em) calc(100vw - 3em), (min-width: 75em) 50vw"
+            srcset="images/fanzi-1000.jpg 1000w, 
+                    images/fanzi-600.jpg 600w,
+                    images/fanzi-400.jpg 400w" />
+    </div>
+    <div class="infoPanel_col2">
+      <div class="infoPanel_inner">
+        <p class="firstP">To put things simply, contemporary wushu is the modernised version of traditional Shaolin kung fu. It is a modern day sport / martial art rooted firmly in the ancient martial and cultural arts of China. Wu translates as war or military, shu translates as arts or skills. Therefore‚ wushu means martial arts.</p>
+      </div>
+    </div>
+    <a href="/Wushu/wushu.html" class="btn infoPanel_btn">Find out more</a>
+  </article>
+  <article id="article3" class="infoPanel group">
+    <h1 class="infoPanel_title">
+      <span class="infoPanel_titleInner">
+        Tai-Chi
+        <span class="infoPanel_dot"></span>
+      </span>
+    </h1>
+    <div class="infoPanel_chinese">
+      太极
+    </div>
+    <span class="infoPanel_line"></span>
+    <div class="infoPanel_col1">
+      <img class="infoPanel_image infoPanel_image-left" src="images/tai-chi.jpg" alt="tai-chi"
+            sizes="100vw, (min-width: 43.75em) calc(100vw - 3em), (min-width: 75em) 50vw"
+            srcset="images/tai-chi-1000.jpg 1000w, 
+                    images/tai-chi-600.jpg 600w,
+                    images/tai-chi-400.jpg 400w" />
+    </div>
+    <div class="infoPanel_col2">
+      <div class="infoPanel_inner">
+        <p class="firstP">Tai Chi (more commonly known as Taiji in China) is an internal Chinese martial art widely practiced for both its health benefits and its defence training.</p>
+        <p>Tai Chi movements combine soft and hard, with slow and fast actions. The slow and gentle movements are relaxing and meditative, while the fast and powerful movements (“Fa Li”, or release energy) improves ones fitness and self-defence applications.</p>
+      </div>
+    </div>
+    <a href="/Tai-chi/tai-chi.html" class="btn infoPanel_btn">Find out more</a>
+  </article>
+</section>
+<script>
   var stretfordMap = '<iframe class="nextClass_map" title="Class location - Stretford map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.683555529434!2d-2.2940550839137837!3d53.45624277417483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bae77522b45c1%3A0x617c79a01d101981!2sStretford+Sports+Village%2C+Talbot+Centre!5e0!3m2!1sen!2suk!4v1503345365924" frameborder="0" style="border:0" allowfullscreen></iframe>';
 
   var aquariusMap = '<iframe class="nextClass_map" title="Class location - Aquarius Community Centre map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7779.6535752568125!2d-2.2495198366321816!3d53.466374126528414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1f21688c315%3A0x2a0cd9e7374c35c7!2sAquarius!5e0!3m2!1sen!2suk!4v1483183563056" frameborder="0" style="border:0" allowfullscreen></iframe>';
@@ -206,87 +284,26 @@
   classTime.innerHTML = nextClass.realTime;
   classLocation.innerHTML = nextClass.where;
   classMap.innerHTML = nextClass.map;
+
+
+  var isInViewport = function ( elem ) {
+      var distance = elem.getBoundingClientRect();
+      return (
+          distance.top >= 0 &&
+          distance.left >= 0 &&
+          distance.bottom <= (window.innerHeight + 150 || document.documentElement.clientHeight + 150) &&
+          distance.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+  };
+  var box = document.getElementsByClassName( 'infoPanel' );
+  window.addEventListener('scroll', function (event) {
+    for (var i = 0; i < box.length; i++) {
+      if (isInViewport(box[i])) {
+          box[i].classList.add('infoPanel-animate');
+      }
+    }
+  }, false);
 </script>
-
-
-<section>
-  <article class="infoPanel group">
-    <h1 class="infoPanel_title">
-      <span class="infoPanel_titleInner">
-        Chinese New Year Show 
-        <span class="infoPanel_dot"></span>
-      </span>
-    </h1>
-    <div class="infoPanel_chinese">
-      中国春节
-    </div>
-    <span class="infoPanel_line"></span>
-    <div class="infoPanel_col1">
-      <img class="infoPanel_image infoPanel_image-left" src="images/home-cny.jpg" alt="Chinese New Year Show"
-            sizes="100vw, (min-width: 43.75em) calc(100vw - 3em), (min-width: 75em) 50vw"
-            srcset="images/home-cny-1000.jpg 1000w, 
-                    images/home-cny-600.jpg 600w,
-                    images/home-cny-400.jpg 400w" />
-    </div>
-    <div class="infoPanel_col2">
-      <div class="infoPanel_inner">
-        <p class="firstP">Touring across the country to celebrate the biggest festive event on the Chinese calendar, Jinlong’s ‘Chinese New Year Extravaganza’ is a unique and exciting show of cultural spectacle featuring a team of performers showcasing amazing Chinese performing arts.</p>
-      </div>
-    </div>
-    <a href="/Shows/chinese-new-year-show.html" class="btn infoPanel_btn">Find out more</a>
-  </article>
-  <article class="infoPanel group">
-    <h1 class="infoPanel_title">
-      <span class="infoPanel_titleInner">
-        Wushu 
-        <span class="infoPanel_dot"></span>
-      </span>
-    </h1>
-    <div class="infoPanel_chinese">
-      武术
-    </div>
-    <span class="infoPanel_line"></span>
-    <div class="infoPanel_col1 infoPanel_col1-right">      
-      <img class="infoPanel_image" src="images/fanzi.jpg" alt="Fanzi"
-            sizes="100vw, (min-width: 43.75em) calc(100vw - 3em), (min-width: 75em) 50vw"
-            srcset="images/fanzi-1000.jpg 1000w, 
-                    images/fanzi-600.jpg 600w,
-                    images/fanzi-400.jpg 400w" />
-    </div>
-    <div class="infoPanel_col2">
-      <div class="infoPanel_inner">
-        <p class="firstP">To put things simply, contemporary wushu is the modernised version of traditional Shaolin kung fu. It is a modern day sport / martial art rooted firmly in the ancient martial and cultural arts of China. Wu translates as war or military, shu translates as arts or skills. Therefore‚ wushu means martial arts.</p>
-      </div>
-    </div>
-    <a href="/Wushu/wushu.html" class="btn infoPanel_btn">Find out more</a>
-  </article>
-  <article class="infoPanel group">
-    <h1 class="infoPanel_title">
-      <span class="infoPanel_titleInner">
-        Tai-Chi
-        <span class="infoPanel_dot"></span>
-      </span>
-    </h1>
-    <div class="infoPanel_chinese">
-      太极
-    </div>
-    <span class="infoPanel_line"></span>
-    <div class="infoPanel_col1">
-      <img class="infoPanel_image infoPanel_image-left" src="images/tai-chi.jpg" alt="tai-chi"
-            sizes="100vw, (min-width: 43.75em) calc(100vw - 3em), (min-width: 75em) 50vw"
-            srcset="images/tai-chi-1000.jpg 1000w, 
-                    images/tai-chi-600.jpg 600w,
-                    images/tai-chi-400.jpg 400w" />
-    </div>
-    <div class="infoPanel_col2">
-      <div class="infoPanel_inner">
-        <p class="firstP">Tai Chi (more commonly known as Taiji in China) is an internal Chinese martial art widely practiced for both its health benefits and its defence training.</p>
-        <p>Tai Chi movements combine soft and hard, with slow and fast actions. The slow and gentle movements are relaxing and meditative, while the fast and powerful movements (“Fa Li”, or release energy) improves ones fitness and self-defence applications.</p>
-      </div>
-    </div>
-    <a href="/Tai-chi/tai-chi.html" class="btn infoPanel_btn">Find out more</a>
-  </article>
-</section>
 </div>
     <footer class="footer">
 	<div class="grid">
