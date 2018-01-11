@@ -207,8 +207,12 @@
 	}
 }
 .footerLogo {
+	display: block;
 	max-width: 100%;
-	margin: 0.5em 0 1em 0;
+	margin: 0.5em 0 3em 0;
+	&-lottery {
+		max-width: 70%;
+	}
 }
 .nextClass {
 	width: 100%;

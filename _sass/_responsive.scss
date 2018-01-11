@@ -34,6 +34,9 @@
 	}
 	.footerLogo {
 		max-width: 70%;
+		&-lottery {
+			max-width: 50%;
+		}
 	}
 }
 @media screen and (min-width: 31.25em) /* 500px */ {
@@ -75,6 +78,9 @@
 	}
 	.footerLogo {
 		max-width: 50%;
+		&-lottery {
+			max-width: 40%;
+		}
 	}
 }
 @media screen and (min-width: 34.375em) /* 550px */ { 
