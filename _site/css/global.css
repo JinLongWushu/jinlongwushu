@@ -485,8 +485,11 @@ a {
     padding: 0.8em 1em 0.8em 0; }
 
 .footerLogo {
+  display: block;
   max-width: 100%;
-  margin: 0.5em 0 1em 0; }
+  margin: 0.5em 0 3em 0; }
+  .footerLogo-lottery {
+    max-width: 70%; }
 
 .nextClass {
   width: 100%;
@@ -983,7 +986,9 @@ a {
     margin-top: 10em; }
 
   .footerLogo {
-    max-width: 70%; } }
+    max-width: 70%; }
+    .footerLogo-lottery {
+      max-width: 50%; } }
 @media screen and (min-width: 31.25em) {
   .curve {
     margin-top: -4.8em; }
@@ -1013,7 +1018,9 @@ a {
     margin-top: 13em; }
 
   .footerLogo {
-    max-width: 50%; } }
+    max-width: 50%; }
+    .footerLogo-lottery {
+      max-width: 40%; } }
 @media screen and (min-width: 34.375em) {
   .instructor {
     float: left;
