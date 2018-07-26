@@ -158,10 +158,9 @@ navigation_weight: 1
     classTime.innerHTML = nextClass.realTime;
     classLocation.innerHTML = nextClass.where;
     classMap.innerHTML = nextClass.map;
-  })();
+})();
 
-
-
+(function() {
   var isInViewport = function ( elem ) {
       var distance = elem.getBoundingClientRect();
       return (
@@ -179,4 +178,5 @@ navigation_weight: 1
       }
     }
   }, false);
+    })();
 </script>

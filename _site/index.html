@@ -285,10 +285,9 @@
     classTime.innerHTML = nextClass.realTime;
     classLocation.innerHTML = nextClass.where;
     classMap.innerHTML = nextClass.map;
-  })();
+})();
 
-
-
+(function() {
   var isInViewport = function ( elem ) {
       var distance = elem.getBoundingClientRect();
       return (
@@ -306,6 +305,7 @@
       }
     }
   }, false);
+    })();
 </script>
 </div>
     <footer class="footer">
