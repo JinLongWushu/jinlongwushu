@@ -214,6 +214,20 @@
 		max-width: 70%;
 	}
 }
+.notification {
+	position: absolute;
+	top: 0;
+	display: block;
+	right: 3.2rem;
+	left: 3.2rem;
+	background-color: $black + 20;
+	color: #fff;
+	font-size: 0.7em;
+	line-height: 1.2em;
+	padding: 0.4em;
+	text-align: center;
+	@include borderRadius(0 0 0.4em 0.4em);
+}
 .nextClass {
 	width: 100%;
 	margin-bottom: 2em;
