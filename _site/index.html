@@ -138,7 +138,7 @@
 </header>
 <div class="homeContentInner">
 	<div class="notification">
-     There will be no classes on Sun 21st Oct, Sat 27th Oct, Sun 28th Oct and Sun 24th Nov.
+     There will be no classes on Sat 27th Oct, Sun 28th Oct and Sun 24th Nov.
 </div>
 <ul class="nextClass group">
   <li class="nextClass_item">
@@ -283,11 +283,15 @@
     var classTime = document.getElementById("classTime");
     var classLocation = document.getElementById("classLocation");
     var classMap = document.getElementById("classMap");
+    var viewportWidth = window.innerWidth;
 
     className.innerHTML = nextClass.name;
     classTime.innerHTML = nextClass.realTime;
     classLocation.innerHTML = nextClass.where;
-    classMap.innerHTML = nextClass.map;
+
+    if (viewportWidth > 1029) {
+      classMap.innerHTML = nextClass.map;
+    }
 })();
 
 (function() {
