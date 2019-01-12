@@ -950,6 +950,16 @@ a {
     margin: 0 1em 1em 1em;
     padding-bottom: 1em;
     border-bottom: 1px solid #363636; }
+  .cv-showDates span {
+    float: left;
+    margin-bottom: 1.7em;
+    width: 7em; }
+  .cv-showDates li {
+    overflow: hidden; }
+  .cv-showDates .btn {
+    margin-top: 0.5em; }
+  .cv-showDates em {
+    display: block; }
 
 .form {
   padding: 0 1em;
@@ -1346,6 +1356,19 @@ a {
   .cv li {
     width: 47rem;
     margin: 0 auto 1em auto; }
+  .cv-showDates span {
+    width: 14em; }
+  .cv-showDates em {
+    display: inline-block; }
+    .cv-showDates em::before {
+      display: inline-block;
+      content: '';
+      width: 0.5em;
+      height: 1px;
+      background-color: #FFDA00;
+      margin-right: 0.3em;
+      margin-left: 0.1em;
+      vertical-align: middle; }
 
   .form {
     width: 50rem;

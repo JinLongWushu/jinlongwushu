@@ -746,7 +746,7 @@
 		font-family: 'cinzel_decorativeregular', georgia, sans-serif;
 		color: $yellow;
 		display: inline-block;
-		margin-right: 0.7em;
+		margin-right: 0.7em;	
 	}
 	p {
 		margin-bottom: 0.7em;
@@ -759,6 +759,22 @@
 		margin: 0 1em 1em 1em;
 		padding-bottom: 1em;
 		border-bottom: 1px solid $black + 20;
+	}
+	&-showDates {
+		span {
+			float: left;
+			margin-bottom: 1.7em;
+			width: 7em;
+		}
+		li {
+			overflow: hidden;
+		}
+		.btn {
+			margin-top: 0.5em;
+		}
+		em {
+			display: block;
+		}
 	}
 }
 .form {
