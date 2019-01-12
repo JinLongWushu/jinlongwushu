@@ -493,6 +493,24 @@
 			width: 47rem;
 			margin: 0 auto 1em auto;
 		}
+		&-showDates {
+			span {
+				width: 14em;
+			}
+			em {
+				display: inline-block;
+				&::before {
+					display: inline-block;
+					content: '';
+					width: 0.5em;
+					height: 1px;
+					background-color: $yellow;
+					margin-right: 0.3em;
+					margin-left: 0.1em;
+					vertical-align: middle;
+				}
+			}
+		}
 	}
 	.form {
 		width: 50rem;
