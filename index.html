@@ -183,4 +183,9 @@ navigation_weight: 1
     }
   }, false);
     })();
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js');
+    });
+  }
 </script>
