@@ -313,11 +313,6 @@
     }
   }, false);
     })();
-    if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/sw.js');
-    });
-  }
 </script>
 </div>
     <footer class="footer">
@@ -373,6 +368,7 @@
       document.getElementById('nav').classList.toggle('nav-expanded');
     };
 </script>
+<script type="text/javascript" src="/js/main.js"></script>
   </body>
 
 </html>
