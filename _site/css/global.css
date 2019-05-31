@@ -761,6 +761,33 @@ a {
     width: 100%;
     height: 100%; }
 
+.connectionStatus {
+  display: block;
+  position: fixed;
+  z-index: 110;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: helvetica, sans-serif;
+  display: block;
+  padding: 0.2rem;
+  margin-bottom: 0;
+  height: 1.5rem;
+  bottom: -1.5rem;
+  -webkit-transition: bottom 0.5s ease;
+  -moz-transition: bottom 0.5s ease;
+  -ms-transition: bottom 0.5s ease;
+  -o-transition: bottom 0.5s ease;
+  transition: bottom 0.5s ease; }
+  .connectionStatus-offline {
+    background-color: #c80000; }
+  .connectionStatus-online {
+    background-color: #42c031; }
+  .connectionStatus.show {
+    bottom: 0; }
+
 /* CLASSES */
 .times {
   margin-bottom: 1em;

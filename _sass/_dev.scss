@@ -1,6 +1,7 @@
 $yellow: #FFDA00;
 $black: #222222;
-
+$red: #c80000;
+$green: #42c031;
 
 @mixin transition ($defaultTransition: background-color 0.2s ease-in) {
 	-webkit-transition: $defaultTransition;
