@@ -142,7 +142,7 @@ a {
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease; }
   a:hover {
-    color: #ebc600;
+    color: #ebc900;
     text-decoration: underline; }
 
 .grid {
@@ -192,7 +192,7 @@ a {
   text-decoration: none;
   text-align: center;
   border: 0;
-  border-bottom: 2px solid #cda800;
+  border-bottom: 2px solid #ccae00;
   font-family: 'dosislight', sans-serif;
   font-size: 1em;
   -webkit-border-radius: 0.3em;
@@ -204,13 +204,13 @@ a {
   -o-transition: background-color 0.3s ease, border-bottom 0.3s ease;
   transition: background-color 0.3s ease, border-bottom 0.3s ease; }
   .btn:hover {
-    background-color: #e1bc00;
+    background-color: #e0c000;
     color: #222222;
     text-decoration: none;
-    border-bottom: 2px solid #af8a00; }
+    border-bottom: 2px solid #ad9400; }
   .btn-black {
     background-color: #181818;
-    border-bottom: 2px solid #040404;
+    border-bottom: 2px solid #0e0e0e;
     color: #FFDA00; }
   .btn-small {
     font-size: 0.9em; }

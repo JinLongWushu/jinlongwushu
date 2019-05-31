@@ -118,7 +118,7 @@ a {
     text-decoration: none;
     @include transition(color .3s ease);
     &:hover {
-        color: $yellow - 20;
+        color: darken( $yellow, 4% );
         text-decoration: underline;
     }
 }
