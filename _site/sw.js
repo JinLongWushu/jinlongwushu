@@ -10,7 +10,7 @@ const cacheName = 'v1';
 
 // Call install event
 self.addEventListener('install', (e) => {
-	// console.log('Service Worker: Installed');
+	console.log('Service Worker: Installed');
 
 	// Required for caching individual assets
 	// e.waitUntil(
@@ -26,14 +26,14 @@ self.addEventListener('install', (e) => {
 
 // Call activate event
 self.addEventListener('activate', (e) => {
-	// console.log('Service Worker: Activated');
+	console.log('Service Worker: Activated');
 	// Remove unwanted caches
 	e.waitUntil(
 		caches.keys().then(cacheNames => {
 			return Promise.all(
 				cacheNames.map(cache => {
 					if(cache !== cacheName) {
-						// console.log('Service Worker: clearing old cache')
+						console.log('Service Worker: clearing old cache')
 						return caches.delete(cache);
 					}
 				})
@@ -44,7 +44,7 @@ self.addEventListener('activate', (e) => {
 
 // Call Fetch event
 self.addEventListener('fetch', e => {
-	// console.log('Service Worker: fetching');
+	console.log('Service Worker: fetching');
 	e.respondWith(
 		fetch(e.request)
 			.then(res => {
