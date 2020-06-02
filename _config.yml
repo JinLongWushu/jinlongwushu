@@ -28,3 +28,5 @@ collections:
     output: false
   instructors:
     output: true
+exclude: [vendor]
+github: [metadata]

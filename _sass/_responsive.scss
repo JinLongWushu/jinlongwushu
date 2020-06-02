@@ -31,6 +31,9 @@
 		&-heroBanner {
 			margin-top: 10em;
 		}
+		&-video {
+			margin-top: 10em;
+		}
 	}
 	.footerLogo {
 		max-width: 70%;
@@ -73,6 +76,9 @@
 	}
 	.header {
 		&-heroBanner {
+			margin-top: 13em;
+		}
+		&-video {
 			margin-top: 13em;
 		}
 	}
@@ -378,6 +384,9 @@
 				width: 100%;
 				padding: 0 2em;
 			}
+		}
+		.para-100 {
+			width: 100%;
 		}
 
 	}
@@ -747,7 +756,7 @@
 	.nextClass {
 		width: 100%;
 		&_item {
-			width: calc(25% + 1em);
+			// width: calc(25% + 1em);
 			margin-left: -1em;
 			height: 9em;
 			border-top: 3px solid $yellow - 20;
@@ -760,11 +769,11 @@
 				@include borderRadius(0);
 			}
 			&:nth-child(1) {
-				width: calc(25% + 1em);
+				// width: calc(25% + 1em);
 				border-bottom: 3px solid $yellow - 20;
 			}
 			&:nth-child(2) {
-				width: calc(25% + 1em);
+				// width: calc(25% + 1em);
 				border-right: 3px solid $yellow - 20;
 				border-bottom: 3px solid $yellow - 20;
 				@include borderRadius(0 1em 1em 0);
@@ -776,11 +785,11 @@
 				}
 			}
 			&:nth-child(3) {
-				width: calc(25% + 1em);
-				border-right: 3px solid $yellow - 20;
-				@include borderRadius(0 1em 1em 0);
+				// width: calc(25% + 1em);
+				// border-right: 3px solid $yellow - 20;
+				@include borderRadius(0);
 				.nextClass_arrow {
-					display: block;
+					display: none;
 				}
 			}
 			&:nth-child(4) {

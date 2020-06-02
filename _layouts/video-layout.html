@@ -2,8 +2,7 @@
 layout: master
 ---
 <div class="video_wrap">
-	<video loop muted autoplay preload="yes" class="video_vid">
-        <source src="images/video-2.mp4" type="video/mp4">
+	<video loop muted autoplay preload="yes" class="video_vid" data-src="images/video-2.mp4">
     </video>
 </div>
 <header class="header header-video">
@@ -12,10 +11,22 @@ layout: master
 		<div class="curve_inner">
 			<p class="curve_strapline">Culture &amp; Performing Arts</p>
 			<p class="intro">
-				We teach Chinese martial arts to children and adults, have a yearly Chinese New Year Show and are available for entertainment at events.
+				Promoting Chinese Cultural Arts since 2007 – through performances, workshops, demonstrations, and teaching Chinese Martial Arts to children and adults.
 			</p>
 		</div>
 	</div>
 </header>
+<script>
+	var heroVideo = document.querySelector('.video_vid');
+	var dataSrc = heroVideo.dataset.src;
+	var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+	if (vw > 1029) {
+		var vidSrc = document.createElement('source');
+		vidSrc.setAttribute('type', 'video/mp4');
+		vidSrc.setAttribute('src', dataSrc);
+		heroVideo.appendChild(vidSrc);
+		heroVideo.play();
+	}
+</script>
 
 {{ content }}
