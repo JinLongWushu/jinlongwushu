@@ -71,6 +71,7 @@ a:hover { color: #ebc900; text-decoration: underline; }
 .btn:hover { background-color: #e0c000; color: #222222; text-decoration: none; border-bottom: 2px solid #ad9400; }
 .btn-black { background-color: #181818; border-bottom: 2px solid #0e0e0e; color: #FFDA00; }
 .btn-small { font-size: 0.9em; }
+.mychangecolorbutton { text-align: center; font-size: xx-large;}
 
 .video_vid { display: none; }
 
