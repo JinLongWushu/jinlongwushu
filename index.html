@@ -32,9 +32,9 @@ navigation_weight: 1
       <p id="classLocation" class="nextClass_info"></p>
     </div>
   </li>
-  <!-- <li id="classMap" class="nextClass_item">
+  <li id="classMap" class="nextClass_item">
     
-  </li> -->
+  </li> 
 </ul>
 
 <section>
@@ -171,16 +171,16 @@ navigation_weight: 1
     var className = document.getElementById("className");
     var classTime = document.getElementById("classTime");
     var classLocation = document.getElementById("classLocation");
-    // var classMap = document.getElementById("classMap");
+    var classMap = document.getElementById("classMap");
     var viewportWidth = window.innerWidth;
 
     className.innerHTML = nextClass.name;
     classTime.innerHTML = nextClass.realTime;
     classLocation.innerHTML = nextClass.where;
 
-    // if (viewportWidth > 1029) {
-    //   classMap.innerHTML = nextClass.map;
-    // }
+   if (viewportWidth > 1029) {
+    classMap.innerHTML = nextClass.map;
+    }
 })();
 
 (function() {
